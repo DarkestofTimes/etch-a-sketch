@@ -11,11 +11,13 @@
   <body draggable="false">
     <header>
       <div class="button-wrapper">
-        <button id="color">color</button>
+        <input type="color" id="color" />
+        <button id="erase">Eraser</button>
         <div class="input-wrapper">
-          <input id="input" type="text" />
-          <button id="send">send</button>
+          <input id="input" type="range" min="16" max="99" value="35" />
+          <p id="rangeValue"></p>
         </div>
+        <button id="send">Reset</button>
       </div>
     </header>
     <main draggable="false">
